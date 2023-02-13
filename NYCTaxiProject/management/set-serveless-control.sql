@@ -17,4 +17,5 @@ EXEC sp_set_data_processed_limit
 EXEC sp_set_data_processed_limit
     @type = N'monthly',
     @limit_tb = 2;
-
+--Apply UTF8 collation on database level
+ALTER DATABASE nyc_taxi_discovery COLLATE Latin1_General_100_CI_AI_SC_UTF8;
